@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>pushup/pushupk1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{183, 1}, {180, 45}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {180, 45}}</string>
+			<key>sourceSize</key>
+			<string>{180, 45}</string>
+		</dict>
+		<key>pushup/pushupk2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 86}, {180, 36}}</string>
+			<key>offset</key>
+			<string>{0, -5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 9}, {180, 36}}</string>
+			<key>sourceSize</key>
+			<string>{180, 45}</string>
+		</dict>
+		<key>pushup/pushupk3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 124}, {180, 23}}</string>
+			<key>offset</key>
+			<string>{0, -11}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 22}, {180, 23}}</string>
+			<key>sourceSize</key>
+			<string>{180, 45}</string>
+		</dict>
+		<key>pushup/pushupk4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 48}, {180, 36}}</string>
+			<key>offset</key>
+			<string>{0, -5}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 9}, {180, 36}}</string>
+			<key>sourceSize</key>
+			<string>{180, 45}</string>
+		</dict>
+		<key>pushup/pushupk5.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {180, 45}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {180, 45}}</string>
+			<key>sourceSize</key>
+			<string>{180, 45}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{256, 256}</string>
+		<key>textureFileName</key>
+		<string>pushup.png</string>
+	</dict>
+</dict>
+</plist>
