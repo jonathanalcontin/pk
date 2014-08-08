@@ -7,7 +7,7 @@
 //
 
 #import "HighScore.h"
-
+#import <mgwuSDK/MGWU.h>
 @implementation HighScore
 
 static HighScore *sharedData = nil;
@@ -23,6 +23,9 @@ static HighScore *sharedData = nil;
         NSNumber *highscores = [[NSUserDefaults standardUserDefaults]objectForKey:@"savedHighscores"];
         sharedData.highscores = [highscores integerValue];
         
+        [MGWU setObject:highscores forKey:@"savedHighscores"];
+        highscores = [MGWU objectForKey:@"savedHighscores"];
+        [MGWU removeObjectForKey:@"savedHighscores"];
     }
     
     //if the singleton instance is already created, return it

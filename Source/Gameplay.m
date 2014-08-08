@@ -9,6 +9,7 @@
 #import "Gameplay.h"
 #import "Character.h"
 #import "HighScore.h"
+#import <mgwuSDK/MGWU.h>
 @implementation Gameplay
 
 {

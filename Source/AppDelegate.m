@@ -28,6 +28,8 @@
 #import "AppDelegate.h"
 #import "CCBuilderReader.h"
 
+#import <mgwuSDK/MGWU.h>
+
 @implementation AppController
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -53,7 +55,8 @@
     //[cocos2dSetup setObject:kEAGLColorFormatRGB565 forKey:CCConfigPixelFormat];
     
     [self setupCocos2dWithOptions:cocos2dSetup];
-    
+    [MGWU loadMGWU:@"a1s2f2r3z"];
+
     return YES;
 }
 

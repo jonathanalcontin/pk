@@ -8,6 +8,7 @@
 
 #import "MainScene.h"
 #import "HighScore.h"
+#import <mgwuSDK/MGWU.h>
 
 @implementation MainScene {
     
@@ -31,6 +32,11 @@
     [[CCDirector sharedDirector] replaceScene:gameplayScene];
 }
 
+
+- (void) moreGames {
+    CCLOG(@"more games button pressed");
+    [MGWU displayCrossPromo];
+}
 
 //NSNumber *currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:@"highScore"];
 //int hs = [currentHighScore intValue];
