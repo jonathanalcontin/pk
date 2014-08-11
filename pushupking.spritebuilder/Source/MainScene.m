@@ -38,6 +38,15 @@
     [MGWU displayCrossPromo];
 }
 
+- (void) faceBook {
+    
+    [MGWU isFacebookActive];
+  [MGWU likeAppWithPageId:@"272422779615412"];
+//    [MGWU loginToFacebook];
+//    [MGWU likeMGWU];
+ ;
+}
+
 //NSNumber *currentHighScore = [[NSUserDefaults standardUserDefaults] objectForKey:@"highScore"];
 //int hs = [currentHighScore intValue];
 //_scoreLabel.string = [NSString stringWithFormat:@"%ld", (long)z];
