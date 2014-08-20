@@ -36,7 +36,10 @@ static HighScore *sharedData = nil;
     _highscores = highscores;
     NSNumber *highscoreNumber = [NSNumber numberWithInteger:highscores];
     
-    [[NSUserDefaults standardUserDefaults]setObject:highscoreNumber forKey:@"savedHighscores"];
-    [[NSUserDefaults standardUserDefaults]synchronize];
+    
+    [MGWU setObject:highscoreNumber forKey:@"savedHighscores"];
+//    [[NSUserDefaults standardUserDefaults]setObject:highscoreNumber forKey:@"savedHighscores"];
+//    [[NSUserDefaults standardUserDefaults]synchronize];
+    
 }
 @end

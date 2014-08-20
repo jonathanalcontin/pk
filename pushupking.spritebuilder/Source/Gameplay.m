@@ -37,8 +37,8 @@
         i = 0;
         m = scorenumber*2.5; // m = z*5;
 
-    _scoreLabel.string = [NSString stringWithFormat:@"%ld", (long)scorenumber];
-    _highScore.string = [NSString stringWithFormat:@"%ld", (long)[HighScore sharedData].highscores];
+    _scoreLabel.string = [NSString stringWithFormat:@"%d", scorenumber];
+    _highScore.string = [NSString stringWithFormat:@"%d", [HighScore sharedData].highscores];
     
       [self schedule:@selector(earthPush) interval:1.0f];
     // access audio object
@@ -59,7 +59,7 @@
     [audio playEffect:@"grunt1.caf"];
     
     
-    if ( _character.position.y <= 200) {
+    if ( _character.position.y <= 270) {
         [self win];
         /* 
          
@@ -71,7 +71,7 @@
         
     }
     
-    if ( _character.position.y >= 200) {
+    if ( _character.position.y >= 270) {
         [self lose];
     }
     if ( _character.position.y <= -140) {
@@ -93,6 +93,13 @@
 - (void) update:(CCTime)delta {
     m = scorenumber*2;
     //originally it was m = z*5;
+    
+    
+    if ( _character.position.y <= -140) {
+        [self lose];
+        
+        
+    }
 }
 
 - (void) earthPush {
@@ -101,7 +108,7 @@
      _character.position = ccp (-82, i-10);
     CCLOG(@"increase by 20 + m");
     
-    if ( _character.position.y >= 200) {
+    if ( _character.position.y >= 270) {
         [self lose];
 }
 }
